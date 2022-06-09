@@ -1,0 +1,64 @@
+.container {
+    margin: 0;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.container .content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content .content__card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: calc(100% / 5);
+    background-color: #D0002D;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.content__card .card__image {
+    border-radius: 20px;
+}
+
+.content__card .card__title {
+    border-radius: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin: 8px 0;
+
+}
+
+.content__card .card__text {
+    margin: 4px 0;
+    font-size: 12px;
+}
+
+.content__card .card__text .card__text--label {
+    width: 60px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+    .content .content__card {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .content .content__card {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content .content__card {
+        width: 100%;
+    }
+}
